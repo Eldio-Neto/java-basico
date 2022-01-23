@@ -80,33 +80,137 @@
     prompt -    abre uma caixinha par o usuario inserir o nome --- é uma string, entao no caso de valores usar parse para mudar p numero
     alert -  abre uma janela com informações que queremos informar ao usuário
 
-    var numero = parseInt(prompt(digite um numero))
+    var numero = parseInt(prompt("digite um numero"))
 
     var dobro = numero + numero
 
     alert("O dobro de " + numero + " é " + dobro)
 
-    --------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+
+    -------------------------------IF e else---------------------------------------
+    var idade = 5
+
+    console.log(idade)
+
+    if ( idade < 18 ) {
+        console.log("não pode")
+        console.log("volte futuramente")
+    }
+    
+    else{
+        console.log("pode")
+        console.log(" qual seu pedido?")
+    }
+    
+    ex:
+    var nome = prompt("qual seu nome?")
+    var covid = prompt("Oi " + nome + " você está com falta de ar? sim/não")
+
+    if (covid == "sim")
+         alert("Procure um medico urgente!")
+
+    else if (covid == "Sim") {
+            alert("Procure um medico urgente!")
+    }    
+
+    else if (covid == "não") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+
+    else if (covid == "Não") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+
+    else if (covid == "nao") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+    else if (covid == "Nao") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+
+    var covid2 = prompt( nome + " você está com febre? sim /não")
+
+    if(covid2 == "sim"){
+        alert("Tome medicamentos para febre. \nSe persistir procure um hospital!")
+
+    }
+    else if (covid2 == "Sim"){
+        alert("Tome medicamentos para febre. \nSe persistir procure um hospital!")
+
+    }
+    else if (covid == "Não") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+    else if (covid == "não") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+    else if (covid2 == "Nao") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+    else if (covid2 == "nao") {
+        alert("Fique tranquilo, mas em caso de piora volte nesta pagina!")
+    }
+
+
+    if (covid, covid2 == "sim")
+        alert("Vá o mais rápido possivel para um Hospital")
+--------------------------------------------------------------------------------
+
+------------------- Operador ternario ------------------------------------
+
+? var a true : false
+
+-------------------------------------------------------------------------------
+
+-------------------------- switch ------------------------------------------------
+
+var nota1 = 0
+var nota2 = 10
+
+var media = (nota1 + nota2) / 2
+
+var mediac = 7 
+
+var conceito = ""
+
+console.log("Sua nota é " + media)
 
 
 
+if ( media >= mediac ){
+    conceito = "otimo"
+    console.log ("isso é " + conceito)
+    
+    
+}
 
+else{
+    conceito = "ruim";
+    console.log ("isso é muito " + conceito)
+    
+}
 
-
-
-
-
-
+switch (conceito){
+    case "ruim" : console.log("estude mais vagabundo!")
+    break
+    case "otimo": console.log("você é um otimo aluno!")
+    break
+    default :
+}
 
 
 
 
 */
-var a = 20
 
-a %= 50
 
-console.log(a)
+
+
+
+
+
+
 
 
 
