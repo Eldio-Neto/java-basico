@@ -199,10 +199,87 @@ switch (conceito){
     default :
 }
 
+----------------------------------------------------------------------------
 
+--------------------------FOR e WHILE---------------------------------------
+ex1:
+    for (var b = 0; b < a; b++){
 
+        console.log("executando o for pela "+ b + " vez")
+
+    }
+    executando o for pela 0 vez
+    executando o for pela 1 vez
+    executando o for pela 2 vez
+    executando o for pela 3 vez
+    executando o for pela 4 vez
+
+ex2:
+
+    var a = 5
+
+    while(a < 10){
+
+        console.log("numero " + a )
+        numero++ 
+    }
+
+    numero 5
+    numero 6
+    numero 7
+    numero 8
+    numero 9
+
+ex3:    
+    var nome = prompt("Qual seu nome?")
+    var apelido = prompt("Qual seu apelido")
+
+    while(nome == apelido){
+
+        alert("Seu apelido não é seu nome")
+        apelido = prompt("Qual seu apelido")
+
+    }
+
+    alert ("Oi " + nome + " seu apelido é " + apelido)
+
+-----------------------------------------------------------------------------
+-----------------------------------ARRAYS -----------------------------------
+    var alunos = new Array("eldio","leticia", "luciane", "neto", "virginia")
+
+    for (var i = 0; i < alunos.length; i++){
+
+        console.log(alunos[i])
+    }
+
+    +++++++++++++++++++++++++++++--- OU ---+++++++++++++++++++++++++++++++
+
+    var alunos = ["eldio","leticia", "luciane", "neto", "virginia", "carlos"]
+
+    for (var i in alunos){
+
+        console.log(alunos[i])
+    }
+
+    +++++++++++++++++++++++++++++++ OU +++++++++++++++++++++++++++++++++++++++
+    
+    var alunos = ["eldio","leticia", "luciane", "neto", "virginia", "carlos"]
+
+    for (var i of alunos){
+
+        console.log(i)
+}
+----------------------------------------------------------------------------------------------    
 
 */
+
+
+var alunos = ["eldio","leticia", "luciane", "neto", "virginia", "carlos"]
+
+for (var i of alunos){
+
+    console.log(i)
+}
 
 
 
