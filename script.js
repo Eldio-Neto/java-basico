@@ -269,17 +269,67 @@ ex3:
 
         console.log(i)
 }
-----------------------------------------------------------------------------------------------    
+----------------------------------------------------------------------------------------------
+
+--------------------------------- FUNCTION ---------------------------------------------------
+
+    function media( n1, n2 ) {
+
+        var nota1 = n1;
+        var nota2 = n2;
+
+        var media = (nota1 + nota2) / 2;
+    
+        return media 
+    }
+
+    var resultado1 = media (5, 6)
+    var resultado2 = media (8, 9)
+
+    console.log (resultado1 + " E " + resultado2)
+
+-------------------------------------------------------------------------------------------------
 
 */
 
+var nome = ["Eldio", "Beatriz", "Carlos", ]
+var nota1 = [10, 9, 8]
+var nota2 = [9.5, 10, 8.4]
 
-var alunos = ["eldio","leticia", "luciane", "neto", "virginia", "carlos"]
+function media(n1, n2) {
 
-for (var i of alunos){
-
-    console.log(i)
+    return((n1 + n2) / 2)
+    
 }
+
+function passou(media) {
+    
+    if (media >= 8)
+        return "aprovado"
+
+    else (media < 8)
+        return "reprovado"
+
+   
+}
+   
+    
+
+
+    for(var index in nome){
+
+        var a = nota1[index]
+        var b = nota2[index]
+        var m = media (a, b)
+        console.log(nome[index] + " - " + a + " - " + b + " - " + m + " - " + passou(m))
+
+}
+
+
+
+
+
+
 
 
 
