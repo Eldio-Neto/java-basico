@@ -340,12 +340,112 @@ function passou(media) {
 
 ---------------------------------------------------------------------------------------------------
 
+---------------------------------------objeto ---------------------------------------------------
+    function calcmedia(){
+
+        return (this.notas[0] + this.notas[1]) / 2 ;
+    
+    }
+
+    function passou(media) {
+    
+        if (media >= 8)
+            return "aprovado"
+
+        else (media < 8)
+            return "reprovado"
+
+   
+    }
 
 
-}
+    var aluno = {
+            nome: "Eldio",
+            notas: [10, 10],
+            media: calcmedia
+
+
+    }
+
+    console.log(aluno.nome)
+    console.log("Suas notas são " + aluno.notas[0] + " e "+ aluno.notas[1])
+
+    console.log("Sua media é "+ aluno.media() + " você está " + passou(aluno.media()) )
+
+
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------- objetos => construtores ---------------------------------------
+ex1:
+    function criaraluno (nome, n1, n2 ) {
+
+        return{
+                nome: nome,
+                nota1: n1,
+                nota2: n2,
+
+                media: function() {
+                    return (n1 + n2 )/ 2
+                
+                }
+
+        }
+            
+    
+    }
+
+    var turma = [
+            criaraluno("Eldio", 10, 9),
+            criaraluno("cristiano", 5, 6) 
+
+       => colocar novos alunos aqui dentro <=
+
+
+    ]
+
+
+    for(var aluno of turma){
+
+        console.log("aluno: " + aluno.nome + " - Av1: " + aluno.nota1 + " - Av2: " + aluno.nota2 + " - média: " + aluno.media())
+
+    }
+
 
 
 */
+
+function criaraluno (nome, n1, n2 ) {
+
+    return{
+            nome: nome,
+            nota1: n1,
+            nota2: n2,
+
+            media: function() {
+                return (n1 + n2 )/ 2
+                
+            }
+
+    }
+            
+    
+}
+
+var turma = [
+        criaraluno("Eldio", 10, 9),
+        criaraluno("cristiano", 5, 6) 
+
+
+
+
+]
+
+
+for(var aluno of turma){
+
+    console.log("aluno: " + aluno.nome + " - Av1: " + aluno.nota1 + " - Av2: " + aluno.nota2 + " - média: " + aluno.media())
+
+}
 
 
 
