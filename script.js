@@ -410,42 +410,49 @@ ex1:
 
     }
 
+EX2----------------------------------------------------------------------------------------------------------    
+    function aluno (nome, n1, n2){
+
+        this.nome = nome;
+        this.nota1 = n1;
+        this.nota2 = n2;
+
+        this.media = function () {
+
+            return (this.nota1 + this.nota2) / 2
+
+
+        }
+
+    }
+
+    function passou(media){
+         if (media >=7)
+            return"Aprovado" 
+        else 
+            return "Reprovado"
+    }    
+
+    var a = new aluno("Eldio", 0, 10);
+    var b = new aluno("Beatriz", 9, 10);
+    var c = new aluno("Maria", 10, 10)
+
+
+    var turma =[a, b, c]
+
+
+    for(i of turma){
+
+        console.log(i.nome + " AV1: " + i.nota1 + " - "+ " Av2: " + i.nota2 + " - " + " Media: " + i.media() + " - " + passou(i.media()))
+    }
 
 
 */
 
-function criaraluno (nome, n1, n2 ) {
 
-    return{
-            nome: nome,
-            nota1: n1,
-            nota2: n2,
+var d = new Date( 1997, 08, 12) //--- // essa 
 
-            media: function() {
-                return (n1 + n2 )/ 2
-                
-            }
-
-    }
-            
-    
-}
-
-var turma = [
-        criaraluno("Eldio", 10, 9),
-        criaraluno("cristiano", 5, 6) 
-
-
-
-
-]
-
-
-for(var aluno of turma){
-
-    console.log("aluno: " + aluno.nome + " - Av1: " + aluno.nota1 + " - Av2: " + aluno.nota2 + " - média: " + aluno.media())
-
-}
+console.log(d)
 
 
 
